@@ -19,10 +19,7 @@
 // for timeout process in Proxy_connect()
 #include <time.h>
 #if defined(_WIN32) || defined(_WIN64)
-	#include <windows.h>
-        #if defined(_MSC_VER) && _MSC_VER < 1900
-                #define snprintf _snprintf
-        #endif
+#include <windows.h>
 #else
 #include <unistd.h>
 #endif
